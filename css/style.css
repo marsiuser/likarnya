@@ -8,6 +8,11 @@ body{
     min-height: 100vh;
 }
 
+a{
+  text-decoration: none;
+  outline: none;
+}
+
 footer{
     margin-top: auto;
 }
@@ -134,6 +139,7 @@ nav a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  outline: none;
 }
 .topmenu li a:hover {color: #80c831;}
 .submenu {
@@ -212,11 +218,11 @@ nav a {
   margin-bottom: 0px;
 }
 
-.main_content .main_block .main_nessasary_info{
+.main_nessasary_info{
   width: 18%;
 }
 
-.main_content .main_block .main_nessasary_info a{
+ .main_nessasary_info a{
     display: flex;
     padding: 20px;
     width: 231px;
@@ -227,22 +233,22 @@ nav a {
     border-bottom: 1px solid #c7c7c7;
     position: relative;
 }
-.main_content .main_block .main_nessasary_info a:hover{
+ .main_nessasary_info a:hover{
   background-color: #e2e2e2;
   transition: 0.4s;
 }
-.main_content .main_block .main_nessasary_info a span{
+ .main_nessasary_info a span{
   position: absolute;
     top: 50%;
     transform: translate(0, -53%);
     left: 72px;
 }
 
-.main_content .main_block .main_nessasary_info a:last-child{
+ .main_nessasary_info a:last-child{
   border-bottom: 1px solid transparent;
 }
 
-.main_content .main_block .main_nessasary_info img{
+ .main_nessasary_info img{
   max-width: 40px;
   width: 100%;
   height: 100%;
@@ -430,17 +436,134 @@ footer .footer_copywrite{
   background-color: #777;
 }
 
+/* ------------------------------------NEWS----------------------------------------- */
+.content_wrap{
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.news_content .content_wrap .news__content_section{
+  padding-top: 60px;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.news__content_section .news_info_block{
+  width: 80%;
+}
+
+.news__content_section .news_info_block span{
+  color: #27a2db;
+  font-weight: 500;
+}
+
+.news__content_section .news_info_block ul{
+  margin: 5px 0px 20px 40px;
+}
+
+.news__content_section .news_info_block li{
+  position: relative;
+}
+
+.news__content_section .news_info_block li::before{
+    content: '';
+    background: url(../img/tick.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    position: absolute;
+    top: 8px;
+    left: -35px;
+}
+.news__content_section .news_info_block p{
+  margin-bottom: 20px;
+}
+
+nav a.active_tab{
+  color: #80c831;
+}
+
+/* ----------------------------ADMIN-------------------------------------------- */
+.news_content .content_wrap .admin__content_section {
+  padding-bottom: 0px;
+}
+.content_wrap .dop_block_admin p,
+.hospital_master_about p{
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.content_wrap .dop_block_admin{
+  margin-bottom: 50px;
+}
+.content_wrap .hospital_master{
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.content_wrap .hospital_admin_contacts{
+  font-weight: 500;
+  color: #27a2db;
+}
+
+.content_wrap .hospital_admin_contacts > a{
+  color: #27a2db;
+  text-decoration: none;
+}
+.content_wrap .hospital_admin_contacts > a:hover{
+  color: #2283b1;
+  transition: 0.4s;
+}
+.content_wrap .master_section .have_about_with_photo img{
+  width: 50%;
+  height: 100%;
+}
+
+.content_wrap .master_section .have_about_with_photo .less_admin_photo{
+  width: 35%;
+}
+.content_wrap .master_section{
+  padding-bottom: 65px;
+}
+
+.have_about_with_photo{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content_wrap .master_section .have_about_with_photo .hospital_master_about{
+  width: 48%;
+}
+
+.content_wrap .master_section .have_about_with_photo .hospital_master_about_full{
+  width: 100%;
+}
+.content_wrap .master_section .have_about_with_photo .hospital_master_about_more{
+  width: 63%;
+}
 @media(max-width: 1600px){
   .main_content .main_block_wrap,
-  header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap {
+  header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap, .content_wrap {
     max-width: 1195px;
   }
   .main_content .main_block .main__block_text,
   .main_content .main_task_hosp,
-  .main_content .main_tel_hospital {
+  .main_content .main_tel_hospital,
+  .news_content .content_wrap .news__content_section,
+  .content_wrap .dop_block_admin p,
+  .hospital_master_about p {
     font-size: 18px;
     line-height: 24px;
   }
+  .content_wrap .hospital_master{
+    font-size: 22px;
+  }
+
   footer .footer_first_part{
     font-size: 16px;
     line-height: 24px;
@@ -448,15 +571,16 @@ footer .footer_copywrite{
   footer .footer_copywrite{
     font-size: 14px;
   }
-  .main_content .main_block .main_nessasary_info a span{
+ .main_nessasary_info a span{
     padding-right: 10px;
   }
-  .main_content .main_block .main_nessasary_info a{
+ .main_nessasary_info a{
     width: 180px;
     font-size: 14px;
     padding: 12px 20px;
+    line-height: 18px;
   }
-  .main_content .main_block .main_nessasary_info {
+  .main_nessasary_info {
     width: 19%;
   }
   .main_content .main_tel_hospital .main_phones h2 {
@@ -482,7 +606,8 @@ footer .footer_copywrite{
 }
 
 @media(max-width: 1300px){
-  .main_content .main_block_wrap, header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap {
+  .main_content .main_block_wrap, header .header_wrap, header .header_riestr_wrap, 
+  .main_content_wrap, .footer_wrap, .content_wrap {
     max-width: 1000px;
   }
   header .header_riestr p {
@@ -506,7 +631,8 @@ footer .footer_copywrite{
 }
 
 @media(max-width: 1100px){
-  .main_content .main_block_wrap, header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap {
+  .main_content .main_block_wrap, header .header_wrap, header .header_riestr_wrap, 
+  .main_content_wrap, .footer_wrap, .content_wrap {
     max-width: 800px;
   }
   .main_content .main_tel_hospital .main_phones h2 {

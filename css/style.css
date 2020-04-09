@@ -546,6 +546,172 @@ nav a.active_tab{
 .content_wrap .master_section .have_about_with_photo .hospital_master_about_more{
   width: 63%;
 }
+
+.have_about_with_photo_rev{
+  flex-direction: row-reverse;
+}
+
+.content_wrap .grafic_info_block{
+  text-align: center;
+}
+
+.news__content_section .grafic_info_block{
+  width: 80%;
+  margin: 0 auto;
+}
+.content_wrap .grafic_info_block td{
+  border: 1px solid #7ac12c;
+  padding: 20px 10px;
+  vertical-align: middle;
+  color: #767676;
+}
+.content_wrap .grafic_info_block table{
+  border-spacing: 0px;
+  margin: 30px 0px 70px;
+}
+
+.news__content_section .grafic_info_block span{
+    color: #767676;
+}
+.news__content_section .grafic_info_block .main_phones_graf span{
+  color: #89d13c;
+}
+.main_tel_hospital .main_phones_graf{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content_wrap .news_info_block_imun{
+  width: 100%;
+}
+
+.content_wrap .news_info_block_imun h3{
+  color: #89d13c;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.content_wrap .news_info_block_imun img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content_wrap .news_info_block_imun .lab_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.content_wrap .lab_wrapper .lab_deskr{
+  width: 72%;
+}
+
+.content_wrap .lab_wrapper .lab_deskr p{
+  font-size: 24px;
+  line-height: 32px;
+}
+.content_wrap .lab_wrapper .lab_photo{
+  width: 25%;
+}
+
+.content_wrap .lab_wrapper .lab_photo p{
+  margin-top: 10px;
+  text-align: right;
+}
+.content_wrap .news_info_block_imun .imun_img_pidpis{
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+  color: #767676;
+}
+
+.content_wrap .news_info_block_imun .lab_mustdo{
+  margin-top: 90px;
+}
+
+.content_wrap .news_info_block_imun .lab_mikro_fin{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.content_wrap .news_info_block_imun .lab_all_list{
+  margin-top: -60px;
+}
+
+.content_wrap .news_info_block_imun .lab_mikro_fin .lab_mk_item{
+  width: 35%;
+  text-align: center;
+  color: #767676;
+}
+.content_wrap .news_info_block_imun .lab_mikro_fin .lab_mk_item p{
+  margin-top: 10px;
+}
+.content_wrap .news_info_block_imun h4{
+  font-weight: 500;
+  color: #89d13c;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.content_wrap .grafic_info_block table tr:first-child td{
+  background-color: #89d13c;
+  color: #fff;
+  font-weight: 500;
+}
+.content_wrap .grafic_info_block h3{
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #767676;
+  font-weight: 500;
+}
+
+.content_wrap .likari_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content_wrap .news_info_block_imun a{
+  color: #767676;
+}
+
+.content_wrap .news_info_block_imun a:hover{
+  color: #636161;
+  transition: 0.3s;
+}
+.content_wrap .likari_box .likari_box_item{
+  width: 30%;
+  margin-bottom: 20px;
+  color: #767676;
+  text-align: center;
+}
+
+.content_wrap .likari_box .likari_box_item p{
+  margin-top: 10px;
+}
+.content_wrap .likari_box .likari_box_item_glav{
+  width: 40%;
+}
+
+.content_wrap .likari_box .likari_box_item_full{
+  width: 80%;
+}
+
+.content_wrap .lab_wrapper  .lab_deskr_alerolog{
+  width: 48%;
+}
+
+.content_wrap .lab_wrapper  .lab_photo_alerolog{
+  width: 48%;
+}
+
+.content_wrap .news_info_block_imun .imun_img_pidpis_ar{
+  text-align: left;
+  margin-top: 40px;
+}
 @media(max-width: 1600px){
   .main_content .main_block_wrap,
   header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap, .content_wrap {
@@ -556,7 +722,9 @@ nav a.active_tab{
   .main_content .main_tel_hospital,
   .news_content .content_wrap .news__content_section,
   .content_wrap .dop_block_admin p,
-  .hospital_master_about p {
+  .hospital_master_about p,
+  .content_wrap .lab_wrapper .lab_deskr p,
+  .content_wrap .news_info_block_imun h4 {
     font-size: 18px;
     line-height: 24px;
   }

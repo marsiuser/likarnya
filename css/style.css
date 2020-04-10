@@ -712,6 +712,38 @@ nav a.active_tab{
   text-align: left;
   margin-top: 40px;
 }
+
+.content_wrap .new-sec_lab{
+  margin-top: 40px;
+}
+
+.content_wrap .obl_lab_klin{
+  margin-bottom: 30px;
+}
+
+.content_wrap .obl_lab_klin_item{
+  display: flex;
+  justify-content: flex-start;
+}
+.content_wrap .obl_lab_klin_item .lab_list_wrapper{
+  width: 45%;
+}
+.content_wrap .obl_lab_klin_item .name_lag{
+  margin-top: 40px;
+}
+.content_wrap .obl_lab_klin_item .lab_kob_imag{
+  width: 26.5%;
+}
+
+.name_lag_pd{
+  margin-top: 40px;
+}
+.ped_nen_zag{
+  text-align: center;
+}
+.me_bold{
+  font-weight: 500;
+}
 @media(max-width: 1600px){
   .main_content .main_block_wrap,
   header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap, .content_wrap {

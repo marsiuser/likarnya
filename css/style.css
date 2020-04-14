@@ -49,7 +49,7 @@ header .header_riestr_wrap,
   object-fit: cover;
 }
 .header_wrap .header_menu .header_name{
-    width: 43%;
+    width: 45%;
     margin-right: auto;
     margin-top: 40px;
 }
@@ -559,18 +559,21 @@ nav a.active_tab{
   width: 80%;
   margin: 0 auto;
 }
-.content_wrap .grafic_info_block td{
+.content_wrap td{
   border: 1px solid #7ac12c;
   padding: 20px 10px;
   vertical-align: middle;
   color: #767676;
 }
-.content_wrap .grafic_info_block table{
+.content_wrap table{
   border-spacing: 0px;
   margin: 30px 0px 70px;
 }
 
-.news__content_section .grafic_info_block span{
+.content_wrap table img{
+  max-width: 300px;
+}
+.news__content_section span{
     color: #767676;
 }
 .news__content_section .grafic_info_block .main_phones_graf span{
@@ -638,7 +641,7 @@ nav a.active_tab{
 }
 
 .content_wrap .news_info_block_imun .lab_all_list{
-  margin-top: -60px;
+  margin-top: 25px;
 }
 
 .content_wrap .news_info_block_imun .lab_mikro_fin .lab_mk_item{
@@ -757,6 +760,61 @@ nav a.active_tab{
   margin: 20px auto;
 }
 
+.content_wrap .aspespeshial_color{
+  color: #89d13c !important;
+}
+
+.align_center_item{
+  text-align: center;
+}
+
+.min_width_have{
+  margin-top: 10px;
+}
+.flex_td{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.all_width{
+  width: 100%;
+}
+
+.max_width_td{
+  width: 300px;
+}
+
+.top_and_color{
+  padding-top: 40px;
+  color: #27a2db;
+  font-weight: 500;
+}
+
+.table_center{
+  text-align: center;
+}
+
+.td_fontw{
+  font-weight: 500;
+}
+
+.new_paper{
+  font-weight: 500;
+  color: #89d13c;
+}
+
+.image_nes_wrp{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.news_info_block_imun .image_nes_space{
+  display: flex;
+  justify-content: space-between;
+}
+.content_wrap .image_nes_wrp .likari_box_item_glav {
+  width: 48%;
+}
 @media(max-width: 1600px){
   .main_content .main_block_wrap,
   header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap, .content_wrap {
@@ -800,7 +858,7 @@ nav a.active_tab{
     font-size: 24px;
   }
   .topmenu > li{
-    font-size: 12px;
+    font-size: 14px;
   }
   .header_menu .header_icons{
     width: 21%;
@@ -889,6 +947,9 @@ nav a.active_tab{
   }
   .main_content .main_task_hosp{
     width: 67%;
+  }
+  .topmenu > li > a {
+    padding: 18px 43px;
   }
 }
 

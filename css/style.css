@@ -953,6 +953,11 @@ nav a.active_tab{
   }
 }
 
+.sm_wrapper_have{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
 /* @media(max-width: 870px){
   .main_content .main_block_wrap, header .header_wrap, header .header_riestr_wrap, .main_content_wrap, .footer_wrap{
     max-width: unset;
